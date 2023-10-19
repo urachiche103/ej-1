@@ -296,5 +296,41 @@
             </table>
     </div>
 
+    <div class="bookings">
+        <h1>Reservas</h1>
+        <form>
+            <fieldset>
+                <legend>Reservas</legend>
+                    <label for="persons">Personas:</label>
+                        <select name="persons" id="persons">
+                            <option value="1">1 Persona</option>
+                            <option value="2">2 Personas</option>
+                            <option value="3">3 Personas</option>
+                            <option value="4">4 Personas</option>
+                            <option value="more">Mas...</option>
+                        </select>
+            </fieldset>
+            <fieldset>
+                <legend>Hora</legend>
+                    <label for="time">Seleccione una hora</label>
+                        <select name="time" id="time"></select>
+                        <input type="time" name="time" id="time">
+            </fieldset>
+            <fieldset>
+                <legend>Tipo de mesa</legend>
+                    <label for="table">Tipo de mesa</label>
+                        <select name="table" id="table">
+                            <option value="round">Redonda</option>
+                            <option value="square">Cuadrada</option>
+                        </select>
+            </fieldset>
+            <button type="submit">Reservar</button>
+        </form>
+
+        <p>Si no encuentra disponibilidad, apuntese en la lista de espera</p>
+        <button type="submit">Lista de espera</button>
+        <button type="submit">Solicitud de grupo</button>
+    </div>
+
 </body>
 </html>
